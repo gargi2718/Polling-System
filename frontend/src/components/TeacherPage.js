@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { io } from 'socket.io-client';
 import axios from 'axios';
 import './TeacherPage.css';
-
-const socket = io('http://localhost:5000');
+const URI='https://polling-system-719a.onrender.com/'
+const UR='http://localhost:5000'
+const socket = io(URI);
 
 const TeacherPage = () => {
   const [question, setQuestion] = useState('');  // Define question state
