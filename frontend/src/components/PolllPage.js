@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { io } from 'socket.io-client';
-
-const socket = io('http://localhost:5000');
+const URI='https://polling-system-719a.onrender.com/'
+const UR='http://localhost:5000'
+const socket = io(URI);
 
 const PollPage = () => {
   const [response, setResponse] = useState('');
