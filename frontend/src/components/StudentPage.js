@@ -3,8 +3,9 @@ import { io } from 'socket.io-client';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './StudentPage.css';
-
-const socket = io('http://localhost:5000');
+const URI='https://polling-system-719a.onrender.com/'
+const UR='http://localhost:5000'
+const socket = io(URI);
 
 const StudentPage = () => {
   const [name, setName] = useState('');
