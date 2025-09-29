@@ -1,15 +1,10 @@
+{
+  "version": 2,
+  "builds": [{ "src": "server.js", "use": "@vercel/node" }],
+  "routes": [
     {
-      "version": 2,
-      "builds": [
-        {
-          "src": "api/Server.js", // Path to your Express entry point
-          "use": "@vercel/node"
-        }
-      ],
-      "routes": [
-        {
-          "src": "/(.*)",
-          "dest": "api/Server.js" // Route all traffic to your Express app
-        }
-      ]
+      "src": "/(.*)",
+      "dest": "Server.js"
     }
+  ]
+}
