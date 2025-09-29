@@ -1,0 +1,166 @@
+.student-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.student-page h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.student-page p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.name-input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.continue-button {
+  background: #7C5CFC;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.active-poll {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.question {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.timer {
+  color: #FF4B4B;
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.option {
+  padding: 1rem;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option:hover {
+  background: #F8F8F8;
+}
+
+.option.selected {
+  background: #7C5CFC;
+  color: white;
+  border-color: #7C5CFC;
+}
+
+.submit-button {
+  background: #7C5CFC;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.results {
+  margin-top: 2rem;
+}
+
+.result-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.result-option.correct {
+  color: #00B87C;
+}
+
+.waiting-screen {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.waiting-screen .spinner {
+  width: 50px;
+  height: 50px;
+  margin: 2rem auto;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #7C5CFC;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.kicked-screen {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.kicked-screen h2 {
+  color: #FF4B4B;
+  margin-bottom: 1rem;
+}
+
+.chat-section {
+  margin-top: 2rem;
+  border-top: 1px solid #E0E0E0;
+  padding-top: 2rem;
+}
+
+.chat-messages {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.message {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.message.received {
+  background: #F8F8F8;
+}
+
+.message.sent {
+  background: #7C5CFC;
+  color: white;
+  margin-left: auto;
+}

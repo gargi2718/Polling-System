@@ -1,0 +1,62 @@
+.poll-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.view-history-btn {
+  background: #7C5CFC;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.options-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.create-poll-btn,
+.view-active-btn {
+  padding: 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.create-poll-btn {
+  background: #7C5CFC;
+  color: white;
+}
+
+.view-active-btn {
+  background: #F8F7FF;
+  color: #7C5CFC;
+  border: 2px solid #7C5CFC;
+}
+
+.create-poll-btn:hover,
+.view-active-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}

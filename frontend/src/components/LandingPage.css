@@ -1,0 +1,74 @@
+.landing-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.landing-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.landing-page p {
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.role-selection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.role-card {
+  background: white;
+  border: 2px solid #E0E0E0;
+  border-radius: 8px;
+  padding: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.role-card:hover {
+  border-color: #7C5CFC;
+  transform: translateY(-2px);
+}
+
+.role-card.selected {
+  border-color: #7C5CFC;
+  background: #F8F7FF;
+}
+
+.role-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.role-card p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.continue-button {
+  background: #7C5CFC;
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.continue-button:hover {
+  background: #6B4CE6;
+}
+
+.continue-button:disabled {
+  background: #E0E0E0;
+  cursor: not-allowed;
+}
